@@ -483,7 +483,7 @@ def search_worker_thread(args, account_queue, account_failures, search_items_que
                         status['message'] = 'Too late for location {:6f},{:6f}; skipping'.format(step_location[0], step_location[1])
                     else:
                         status['message'] = 'Skipping {:6f},{:6f}; outside time and speed constraints'.format(step_location[0], step_location[1])
-                      log.info(status['message'])
+                    log.info(status['message'])
                     # No sleep here; we've not done anything worth sleeping for. Plus we clearly need to catch up!
                     continue
 
